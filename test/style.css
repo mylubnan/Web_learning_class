@@ -4,6 +4,14 @@ body {
     color: white;
     ;
 }
+
+table, th, td {
+  border: 1px solid white;
+}
+
+th, td {
+  padding: 10px;
+}
 /* 
 #topbar {
     list-style-type: none;
