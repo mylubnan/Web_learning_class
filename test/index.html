@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,14 @@
     <meta name="author" content="Lubnan">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/ffebbb7467.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <section>
+    <nav>
         <a href="Main">LnSm</a>
+
         <ul id="topbar">
             <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
@@ -24,8 +25,12 @@
             <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             <li><a href="#login"><i class="fa-solid fa-circle-user"></i> Login</a></li>
         </ul>
-    </section>
+    </nav>
+    <!-- <aside>        
+        For a side bar later on
+    </aside>  -->
     <hr>
+
     <section id="home">
         Hello <br>
         I'm Lubnan Samae <br>
@@ -33,25 +38,24 @@
         <img src="Lubnan.jpg" alt="Lubnan image" style="max-width:30%;height:auto;float:right;">
     </section>
     <hr>
+
     <section id="about">
-        <div>
-            <h1>About me</h1>
-            I&#39;m Lubnan Samae
-        </div>
-        <div>
-        I&#39;m study Information Technology, 2nd year of Bachelor's degree at Fatoni University. I'm Interesting in web development. <br> <br>
+        <h1>About me</h1>
+
+        I&#39;m Lubnan Samae <br>
+        I&#39;m study Information Technology, 2nd year of Bachelor's degree at Fatoni University. I'm Interesting in web
+        development. <br> <br>
         My experience is C, HTML, CSS, JS language and basic cyber ane network security. <br> <br>
         This is my first personal website by using HTML, CSS, and JS.
-        </div>
     </section>
     <hr>
+
     <section id="portfolio">
         <h1>Portfolio</h1>
     </section>
     <hr>
     <section id="contact">
         <h1>Contact me</h1>
-    <div>
         Get in Touch <br>
         <i class="fa-solid fa-circle-user"></i> Name <br>
         Lubnan Samae <br>
@@ -60,28 +64,31 @@
         <i class="fa-solid fa-inbox"></i> Email <br>
         mylubnan@gmail.com <br>
         <i class="fa-solid fa-book-atlas"></i> Website <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan"> Github.com/mylubnan</a> <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan"> Freecodecamp.org/mylubnan</a> <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung"> Facebook.com/lnankung</a> <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan">
+            Github.com/mylubnan</a> <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan">
+            Freecodecamp.org/mylubnan</a> <br>
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung">
+            Facebook.com/lnankung</a> <br>
         <i class="fa-solid fa-comment"></i> Message Me <br>
         <form action="">
             <fieldset>
                 <legend>User Information</legend>
-            <label for="fullname">Full Name:</label>
-            <input type="text" placeholder="Full Name" required pattern="[A-Za-z]{1,}.[A-Za-z]{1,}"> <br>
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" placeholder="Phone Number" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"> <br>
-            <label for="email">Email:</label>
-            <input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
-            <label for="subject">Subject:</label>
-            <input type="text" placeholder="Subject" required> <br>
-            <label for="message" class="message">Message:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea> <br>
-            <input type="file" id="myfile" name="myfile" accept=".jpg,.png" required>
-            <input type="submit"> <br>
+                <label for="fullname">Full Name:</label>
+                <input type="text" placeholder="Full Name" required pattern="[A-Za-z]{1,}.[A-Za-z]{1,}"> <br>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" placeholder="Phone Number" required
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"> <br>
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+                <label for="subject">Subject:</label>
+                <input type="text" placeholder="Subject" required> <br>
+                <label for="message" class="message">Message:</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea> <br>
+                <input type="file" id="myfile" name="myfile" accept=".jpg,.png" required>
+                <input type="submit"> <br>
             </fieldset>
         </form>
-    </div>
     </section>
     <hr>
     <!-- <table>
@@ -111,6 +118,8 @@
     <hr>
     <footer> Create By <a href="https://github.com/mylubnan">Lubnan Samae</a> | &#169; 2022 All right reserved.</footer>
     <hr>
-</section>
+    </section>
+    <script src="index.js"></script>
 </body>
+
 </html>
