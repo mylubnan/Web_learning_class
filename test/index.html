@@ -15,26 +15,30 @@
 </head>
 
 <body>
-    <nav>
-        <ul id="navbar">
-            <li><a href="#mail"><i class="fa-solid fa-house"></i> LnSm</a></li>
-            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
-            <li><a href="#portfolio"><i class="fa-solid fa-address-card"></i> Portfolio</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-            <li><a href="#login"><i class="fa-solid fa-circle-user"></i> Login</a></li>
-        </ul>
+    <nav class="topnav">
+        <a href="#mail" class="active"><i class="fa-solid fa-house"></i> LnSm</a>
+        <div id="myLinks">
+            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+            <a href="#portfolio"><i class="fa-solid fa-address-card"></i> Portfolio</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <a href="#login"><i class="fa-solid fa-circle-user"></i> Login</a>
+        </div>
+        <!-- Add three bars icon  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </nav>
-    <!-- <aside>        
-        For a side bar later on
-    </aside>  -->
+
     <hr>
 
-    <section id="home">
-        Hello <br>
-        I'm Lubnan Samae <br>
-        and I'm a IT Student <br>
-        <img src="Lubnan.jpg" alt="Lubnan image" style="max-width:30%;height:auto;float:right;">
+    <section class="home">
+        <h1>
+            Hello <br>
+            I'm Lubnan Samae <br>
+            and I'm a IT Student <br>
+            <img src="Lubnan.jpg" alt="Lubnan image" class="picture-first">
+        </h1>
     </section>
     <hr>
 
@@ -63,14 +67,14 @@
         <i class="fa-solid fa-inbox"></i> Email <br>
         mylubnan@gmail.com <br>
         <i class="fa-solid fa-book-atlas"></i> Website <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan">
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i><a href="https://github.com/mylubnan" target="_blank">
             Github.com/mylubnan</a> <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan">
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-free-code-camp"></i><a href="https://www.freecodecamp.org/mylubnan" target="_blank">
             Freecodecamp.org/mylubnan</a> <br>
-        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung">
+        &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/lnankung" target="_blank">
             Facebook.com/lnankung</a> <br>
         <i class="fa-solid fa-comment"></i> Message Me <br>
-        <form id="form" action="pathForTheActionScript" target="_blank" method="post" autocomplete="on">
+        <form class="form" action="pathForTheActionScript" target="_blank" method="post" autocomplete="on">
             <fieldset>
                 <legend>User Information</legend>
                 <label for="fullname" title="Only character follow by name and surname">Full Name:</label> <br>
@@ -97,12 +101,15 @@
         </form>
     </section>
     <hr>
+
     <section id="login">
         <h1 id="">Login</h1>
     </section>
     <hr>
-    <footer> Create By <a href="https://github.com/mylubnan">Lubnan Samae</a> | &#169; 2022 All right reserved.</footer>
+
+    <footer> Create By <a href="https://github.com/mylubnan" target="_blank">Lubnan Samae</a> | &#169; 2022 All right reserved.</footer>
     </section>
+
     <script src="index.js"></script>
 </body>
 
