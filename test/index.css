@@ -11,6 +11,11 @@
    font-size: 46px;
  }
 
+ pre {
+   width: auto;
+   height: auto;
+ }
+
  /* Unvisited link */
  a:link {
    color: lightgreen;
@@ -32,16 +37,33 @@
    text-decoration: underline;
  }
 
- .picture-first {
-   max-width: 100%;
-   height: auto;
-   position: relative;
-   /* float: right; */
- }
-
  .home {
    border: 1px solid black;
    background-color: #050504;
+   overflow: auto;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .half {
+   flex-basis: 50%;
+ }
+
+ .picture-first {
+   max-width: 600px;
+   height: auto;
+  padding: 10px;
+ }
+
+ img {
+   display: block;
+   margin: auto;
+ }
+
+ @media (max-width: 768px) {
+   .half {
+     flex-basis: 100%;
+   }
  }
 
  .form {
